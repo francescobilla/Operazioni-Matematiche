@@ -10,6 +10,8 @@ namespace Operazioni_Matematiche
             int a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("inserisci un numero:");
             int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("inserisci un numero:");
+            int c = Convert.ToInt32(Console.ReadLine());
 
             int somma = Matematica.Somma(a,b);
             Console.WriteLine($"la somma é:{somma}");
@@ -25,7 +27,33 @@ namespace Operazioni_Matematiche
 
             double divisione = Matematica.Divisione(a,b);
             Console.WriteLine($"la divisione è:{divisione}");
-            
+
+            long elevato = Matematica.Elevato(a, b);
+            Console.WriteLine($"il numero elevato è:{elevato}");
+
+            int minore = Matematica.Minore(a, b, c);
+            Console.WriteLine($"il più piccolo è:{minore}");
+
+            int maggiore = Matematica.Maggiore(a, b, c);
+            Console.WriteLine($"il più grande è:{maggiore}");
+
+            double inverso = Matematica.Inverso(a);
+            Console.WriteLine($"l'inverso di {a} è: {inverso}");
+
+            bool pari = Matematica.Pari(a);
+            Console.WriteLine($"{a} è un numero pari?:{pari}");
+
+            bool dispari = Matematica.Dispari(a);
+            Console.WriteLine($"{a} è un numero dispari?:{dispari}");
+
+            bool positivo = Matematica.Positivo(a);
+            Console.WriteLine($"{a} è un numero positivo?:{positivo}");
+
+            bool negativo = Matematica.Negativo(a);
+            Console.WriteLine($"{a} è un numero negativo?:{negativo}");
+
+            bool intero = Matematica.Intero(a);
+            Console.WriteLine($"{a} è un numero intero?:{intero}");
         }
     }
 }
